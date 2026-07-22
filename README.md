@@ -577,6 +577,7 @@ Through this project I learned
 
 <img width="944" height="452" alt="image" src="https://github.com/user-attachments/assets/097905c1-704b-4eda-a869-9f40effa721d" />
 <img width="950" height="497" alt="image" src="https://github.com/user-attachments/assets/7c752c7a-e52a-46c9-82c6-826a53dad916" />
+<img width="953" height="430" alt="image" src="https://github.com/user-attachments/assets/1e4c5074-9fc1-4c19-9473-321dcd5f6195" />
 
 # 👨‍💻 Author
 
