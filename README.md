@@ -564,6 +564,15 @@ Through this project I learned
 - CI/CD Pipeline Automation
 
 ---
+# Outputs
+<img width="925" height="427" alt="image" src="https://github.com/user-attachments/assets/cf253fa6-ac42-4c05-93c4-1edd5699c7c5" />
+<img width="934" height="473" alt="image" src="https://github.com/user-attachments/assets/050a9c8a-f750-4514-98d3-c6478d2060f7" />
+
+<img width="920" height="458" alt="image" src="https://github.com/user-attachments/assets/f3551af9-0369-45bd-b737-fe8becb7ab4e" />
+<img width="949" height="449" alt="image" src="https://github.com/user-attachments/assets/3a0923be-1e2b-4c49-a819-2578b26eacc9" />
+<img width="953" height="460" alt="image" src="https://github.com/user-attachments/assets/714c234f-4421-41e0-8df1-a50bf35fa4bb" />
+<img width="941" height="447" alt="image" src="https://github.com/user-attachments/assets/3b6ffd4b-1270-4236-bab4-41f085b158d3" />
+
 
 # 👨‍💻 Author
 
