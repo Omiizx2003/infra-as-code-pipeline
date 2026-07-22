@@ -8,9 +8,8 @@ on:
 env:
   AWS_REGION: ap-south-1
   ECR_REPOSITORY: ecommerce-app
-  ECS_CLUSTER: ecommerce-production-cluster
+  ECS_CLUSTER: ecommerce-cluster
   ECS_SERVICE: ecommerce-service
-
 jobs:
   production:
     runs-on: ubuntu-latest
