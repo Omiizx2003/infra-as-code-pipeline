@@ -568,11 +568,15 @@ Through this project I learned
 <img width="925" height="427" alt="image" src="https://github.com/user-attachments/assets/cf253fa6-ac42-4c05-93c4-1edd5699c7c5" />
 <img width="934" height="473" alt="image" src="https://github.com/user-attachments/assets/050a9c8a-f750-4514-98d3-c6478d2060f7" />
 
+<img width="956" height="437" alt="image" src="https://github.com/user-attachments/assets/881c0a03-009e-4001-bedf-583bbc545d1d" />
+
 <img width="920" height="458" alt="image" src="https://github.com/user-attachments/assets/f3551af9-0369-45bd-b737-fe8becb7ab4e" />
 <img width="949" height="449" alt="image" src="https://github.com/user-attachments/assets/3a0923be-1e2b-4c49-a819-2578b26eacc9" />
 <img width="953" height="460" alt="image" src="https://github.com/user-attachments/assets/714c234f-4421-41e0-8df1-a50bf35fa4bb" />
 <img width="941" height="447" alt="image" src="https://github.com/user-attachments/assets/3b6ffd4b-1270-4236-bab4-41f085b158d3" />
 
+<img width="944" height="452" alt="image" src="https://github.com/user-attachments/assets/097905c1-704b-4eda-a869-9f40effa721d" />
+<img width="950" height="497" alt="image" src="https://github.com/user-attachments/assets/7c752c7a-e52a-46c9-82c6-826a53dad916" />
 
 # 👨‍💻 Author
 
