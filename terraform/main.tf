@@ -9,7 +9,7 @@ module "networking" {
 }
 module "security" {
 
-  source = "./modules/security"
+  source      = "./modules/security"
   environment = terraform.workspace
 
   vpc_id = module.networking.vpc_id
@@ -51,10 +51,7 @@ module "compute" {
 
   log_group_name = module.monitoring.log_group_name
 
-  region = var.region
+  region      = var.region
   environment = terraform.workspace
 
-}
-locals {
-  environment = terraform.workspace
 }
