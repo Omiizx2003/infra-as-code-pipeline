@@ -8,7 +8,7 @@ on:
 env:
   AWS_REGION: ap-south-1
   ECR_REPOSITORY: ecommerce-app
-  ECS_CLUSTER: ecommerce-cluster
+  ECS_CLUSTER: ecommerce-staging-cluster
   ECS_SERVICE: ecommerce-service
 jobs:
   production:
@@ -44,14 +44,21 @@ jobs:
       - name: Rollback
         if: failure()
         run: |
-          PREVIOUS=$(aws ecs describe-services \
-          --cluster $ECS_CLUSTER \
-          --services $ECS_SERVICE \
-          --query "services[0].taskDefinition" \
-          --output text)
+
+          CURRENT=$(aws ecs describe-services \
+            --cluster $ECS_CLUSTER \
+            --services $ECS_SERVICE \
+            --query "services[0].taskDefinition" \
+            --output text)
+
+          FAMILY=$(echo $CURRENT | cut -d'/' -f2 | cut -d':' -f1)
+
+          CURRENT_REV=$(echo $CURRENT | rev | cut -d':' -f1 | rev)
+
+          PREVIOUS_REV=$((CURRENT_REV-1))
 
           aws ecs update-service \
-          --cluster $ECS_CLUSTER \
-          --service $ECS_SERVICE \
-          --task-definition $PREVIOUS \
-          --force-new-deployment
+            --cluster $ECS_CLUSTER \
+            --service $ECS_SERVICE \
+            --task-definition ${FAMILY}:${PREVIOUS_REV} \
+            --force-new-deployment
