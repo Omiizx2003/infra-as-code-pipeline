@@ -1,4 +1,4 @@
-FROM node:999
+FROM nginx:alpine
 
 COPY . .
 EXPOSE 80
