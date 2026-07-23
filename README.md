@@ -15,8 +15,8 @@ A growing e-commerce company was deploying applications manually using SSH.
 Problems:
 
 - Manual deployments
-- Human errors
-- Configuration mistakes
+- Human error
+- Configuration mistake
 - Production outages
 - No rollback capability
 
