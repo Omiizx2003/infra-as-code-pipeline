@@ -8,8 +8,9 @@ on:
 env:
   AWS_REGION: ap-south-1
   ECR_REPOSITORY: ecommerce-staging
-  ECS_CLUSTER: commerce-staging-cluster
+  ECS_CLUSTER: ecommerce-staging-cluster
   ECS_SERVICE: ecommerce-service
+
 jobs:
   production:
     runs-on: ubuntu-latest
@@ -25,6 +26,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - uses: aws-actions/amazon-ecr-login@v2
+
       - name: Build image
         run: docker build -t $ECR_REPOSITORY ./app
 
@@ -37,6 +39,7 @@ jobs:
         run: |
           docker push \
           343980058896.dkr.ecr.ap-south-1.amazonaws.com/$ECR_REPOSITORY:latest
+
       - name: Deploy to ECS
         id: deploy
         run: |
@@ -56,26 +59,26 @@ jobs:
             --region $AWS_REGION
 
       - name: Rollback
-        if: failure()
+        if: steps.wait.outcome == 'failure'
         run: |
           echo "Deployment failed. Finding previous working task definition..."
 
-          # Get the current task definition
           CURRENT=$(aws ecs describe-services \
             --cluster $ECS_CLUSTER \
             --services $ECS_SERVICE \
+            --region $AWS_REGION \
             --query "services[0].taskDefinition" \
             --output text)
 
-          echo "Current: $CURRENT"
+          echo "Current Task Definition: $CURRENT"
 
           FAMILY=$(basename "$CURRENT" | cut -d':' -f1)
 
-          # Get all ACTIVE task definitions (newest first)
           PREVIOUS=$(aws ecs list-task-definitions \
             --family-prefix $FAMILY \
             --status ACTIVE \
             --sort DESC \
+            --region $AWS_REGION \
             --query "taskDefinitionArns[1]" \
             --output text)
 
@@ -90,10 +93,12 @@ jobs:
             --cluster $ECS_CLUSTER \
             --service $ECS_SERVICE \
             --task-definition $PREVIOUS \
-            --force-new-deployment
+            --force-new-deployment \
+            --region $AWS_REGION
 
           aws ecs wait services-stable \
             --cluster $ECS_CLUSTER \
-            --services $ECS_SERVICE
+            --services $ECS_SERVICE \
+            --region $AWS_REGION
 
           echo "Rollback completed successfully."
