@@ -5,7 +5,7 @@ on:
     branches:
       - main
 
-eenv:
+env:
   AWS_REGION: ap-south-1
   ECR_REPOSITORY: ecommerce-default
   ECS_CLUSTER: ecommerce-default-cluster
