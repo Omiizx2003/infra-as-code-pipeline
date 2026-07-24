@@ -5,10 +5,10 @@ on:
     branches:
       - main
 
-env:
+eenv:
   AWS_REGION: ap-south-1
-  ECR_REPOSITORY: ecommerce-staging
-  ECS_CLUSTER: ecommerce-staging-cluster
+  ECR_REPOSITORY: ecommerce-default
+  ECS_CLUSTER: ecommerce-default-cluster
   ECS_SERVICE: ecommerce-service
 
 jobs:
