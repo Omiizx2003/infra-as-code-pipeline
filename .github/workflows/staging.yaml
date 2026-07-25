@@ -9,7 +9,7 @@ env:
   AWS_REGION: ap-south-1
   ECR_REPOSITORY: ecommerce-default
   ECS_CLUSTER: ecommerce-default-cluster
-  ECS_SERVICE: ecommerce-default-service
+  ECS_SERVICE: ecommerce-service
 
 jobs:
   staging:
