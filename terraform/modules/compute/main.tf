@@ -5,7 +5,7 @@ name = "ecommerce-${var.environment}-cluster"
 }
 resource "aws_lb" "main" {
 
-  name               = "ecommerce-alb"
+  name               = "ecommerce-${var.environment}-alb"
 
   internal           = false
 
@@ -24,7 +24,7 @@ resource "aws_lb" "main" {
 
 resource "aws_lb_target_group" "main" {
 
-  name = "ecommerce-tg"
+  name = "ecommerce-${var.environment}-tg"
 
   port = 80
 
@@ -67,7 +67,7 @@ resource "aws_lb_listener" "http" {
 }
 resource "aws_ecs_task_definition" "app" {
 
-  family = "ecommerce"
+  family = "ecommerce-${var.environment}"
 
   requires_compatibilities = ["FARGATE"]
 
@@ -124,7 +124,7 @@ resource "aws_ecs_task_definition" "app" {
 }
 resource "aws_ecs_service" "app" {
 
-  name = "ecommerce-service"
+  name = "ecommerce-${var.environment}-service"
 
   cluster = aws_ecs_cluster.main.id
 
@@ -185,7 +185,7 @@ resource "aws_appautoscaling_target" "ecs" {
 }
 resource "aws_appautoscaling_policy" "cpu" {
 
-  name = "ecs-cpu-scaling"
+  name = "ecs-${var.environment}-cpu-scaling"
 
   policy_type = "TargetTrackingScaling"
 
