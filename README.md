@@ -567,7 +567,7 @@ Through this project I learned
 
 # Author
 
-**Omkar Manjare**
+**Omkar Manjrekar**
 
 DevOps | AWS | Docker | Terraform | GitHub Actions | ECS | CI/CD
 ---
