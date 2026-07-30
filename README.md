@@ -578,12 +578,16 @@ DevOps | AWS | Docker | Terraform | GitHub Actions | ECS | CI/CD
 <img width="956" height="437" alt="image" src="https://github.com/user-attachments/assets/881c0a03-009e-4001-bedf-583bbc545d1d" />
 
 <img width="920" height="458" alt="image" src="https://github.com/user-attachments/assets/f3551af9-0369-45bd-b737-fe8becb7ab4e" />
+
 Two ECR for staging and Production Images
 <img width="953" height="404" alt="image" src="https://github.com/user-attachments/assets/b2465021-be3e-43f0-8615-ffd28d8570a1" />
+
 Two ECS For Staging and Production
 <img width="953" height="397" alt="image" src="https://github.com/user-attachments/assets/27b87cc3-52da-4baf-a5a2-3084314c3347" />
+
 When we create a feature branch and do some changes and push it to it the same branch 
 <img width="761" height="126" alt="image" src="https://github.com/user-attachments/assets/64a539f8-edc3-4517-ac93-6aaf4ca08318" />
+
 we need to create a pull request
 <img width="948" height="377" alt="image" src="https://github.com/user-attachments/assets/d5937582-620c-453b-b4d5-293e9c9c6d4a" />
 <img width="954" height="289" alt="image" src="https://github.com/user-attachments/assets/4ad0cd0a-5b40-4bd6-9609-4c04c924ecf8" />
