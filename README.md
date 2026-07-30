@@ -573,6 +573,12 @@ DevOps | AWS | Docker | Terraform | GitHub Actions | ECS | CI/CD
 ---
 # Outputs
 <img width="925" height="427" alt="image" src="https://github.com/user-attachments/assets/cf253fa6-ac42-4c05-93c4-1edd5699c7c5" />
+<img width="975" height="445" alt="image" src="https://github.com/user-attachments/assets/23832ed9-6d1c-404e-b19c-8f66eb49d59a" />
+
+For Different workspace Different Load Balancer is being created
+<img width="975" height="436" alt="image" src="https://github.com/user-attachments/assets/69b9ccc8-55cb-4288-ac86-57e458fcb174" />
+
+
 <img width="934" height="473" alt="image" src="https://github.com/user-attachments/assets/050a9c8a-f750-4514-98d3-c6478d2060f7" />
 
 <img width="956" height="437" alt="image" src="https://github.com/user-attachments/assets/881c0a03-009e-4001-bedf-583bbc545d1d" />
@@ -601,7 +607,8 @@ Once the Pull request is succedd we merge it to main
 
 <img width="944" height="452" alt="image" src="https://github.com/user-attachments/assets/097905c1-704b-4eda-a869-9f40effa721d" />
 <img width="950" height="497" alt="image" src="https://github.com/user-attachments/assets/7c752c7a-e52a-46c9-82c6-826a53dad916" />
-<img width="953" height="430" alt="image" src="https://github.com/user-attachments/assets/1e4c5074-9fc1-4c19-9473-321dcd5f6195" />
+<img width="975" height="441" alt="image" src="https://github.com/user-attachments/assets/f677116b-9992-4150-8d07-2d3179a4462d" />
+
 
 # 👨‍💻 Author
 
