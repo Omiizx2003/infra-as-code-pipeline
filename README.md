@@ -37,6 +37,7 @@ This project provides
 ---
 
 # Architecture
+<img width="437" height="387" alt="image" src="https://github.com/user-attachments/assets/081a19d3-22bb-41d4-bc31-42699453faf9" />
 
 ```
 Developer
