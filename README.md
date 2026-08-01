@@ -598,6 +598,8 @@ When we create a feature branch and do some changes and push it to it the same b
 we need to create a pull request
 <img width="948" height="377" alt="image" src="https://github.com/user-attachments/assets/d5937582-620c-453b-b4d5-293e9c9c6d4a" />
 <img width="954" height="289" alt="image" src="https://github.com/user-attachments/assets/4ad0cd0a-5b40-4bd6-9609-4c04c924ecf8" />
+<img width="949" height="460" alt="image" src="https://github.com/user-attachments/assets/72067246-64f4-4586-b918-ae6ec676869e" />
+
 Once the Pull request is succedd we merge it to main
 
 <img width="959" height="406" alt="image" src="https://github.com/user-attachments/assets/88a9de9b-b2f2-48e0-a763-9a11194c97ec" />
